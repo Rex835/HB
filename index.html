@@ -7,61 +7,69 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <title>🎉</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="container">
-        <section class="birthday-card" aria-label="Tarjeta de cumpleaños animada">
+    <main class="container-fluid d-flex align-items-center justify-content-center min-vh-100 py-4">
+        <div class="row justify-content-center w-100">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+                <section class="birthday-card" aria-label="Tarjeta de cumpleaños animada">
 
-            <!-- Globos -->
-            <div class="balloons" aria-hidden="true">
-                <div class="balloon balloon-1">🎈</div>
-                <div class="balloon balloon-2">🎈</div>
-                <div class="balloon balloon-3">🎈</div>
-                <div class="balloon balloon-4">🎈</div>
-                <div class="balloon balloon-5">🎈</div>
+                    <!-- Globos -->
+                    <div class="balloons" aria-hidden="true">
+                        <div class="balloon balloon-1">🎈</div>
+                        <div class="balloon balloon-2">🎈</div>
+                        <div class="balloon balloon-3">🎈</div>
+                        <div class="balloon balloon-4">🎈</div>
+                        <div class="balloon balloon-5">🎈</div>
+                    </div>
+
+                    <!-- Pastel -->
+                    <div class="cake" aria-hidden="true">
+                        <div class="plate"></div>
+                        <div class="layer layer-bottom"></div>
+                        <div class="layer layer-middle"></div>
+                        <div class="layer layer-top"></div>
+                        <div class="icing"></div>
+                        <div class="candle"><div class="flame"></div></div>
+                        <div class="candle"><div class="flame"></div></div>
+                        <div class="candle"><div class="flame"></div></div>
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div class="message">
+                        <h1 class="title display-4 fw-bold">¡Feliz Cumpleaños, Mariely! 🎂</h1>
+                        <p class="subtitle lead">Que este día esté lleno de:</p>
+                        
+                        <div class="wishes d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 gap-sm-4 flex-wrap">
+                            <span class="wish badge rounded-pill px-3 py-2">✨ Alegría ✨</span>
+                            <span class="wish badge rounded-pill px-3 py-2">💖 Amor 💖</span>
+                            <span class="wish badge rounded-pill px-3 py-2">🌟 Felicidad 🌟</span>
+                        </div>
+
+                        <p class="personal-message mt-4">
+                            Te deseo un nuevo año lleno de momentos inolvidables y sueños cumplidos.
+                        </p>
+
+                        <div class="sparkles" aria-hidden="true">
+                            <span>✨</span><span>💫</span><span>⭐</span><span>✨</span><span>💫</span>
+                        </div>
+
+                        <p class="hidden-message">te quiero</p>
+                    </div>
+
+                    <!-- Confeti -->
+                    <div class="confetti-container" aria-hidden="true"></div>
+                </section>
             </div>
-
-            <!-- Pastel -->
-            <div class="cake" aria-hidden="true">
-                <div class="plate"></div>
-                <div class="layer layer-bottom"></div>
-                <div class="layer layer-middle"></div>
-                <div class="layer layer-top"></div>
-                <div class="icing"></div>
-                <div class="candle"><div class="flame"></div></div>
-                <div class="candle"><div class="flame"></div></div>
-                <div class="candle"><div class="flame"></div></div>
-            </div>
-
-            <!-- Mensaje -->
-            <div class="message">
-                <h1 class="title">¡Feliz Cumpleaños, Mariely! 🎂</h1>
-                <p class="subtitle">Que este día esté lleno de:</p>
-                
-                <div class="wishes">
-                    <span class="wish">✨ Alegría ✨</span>
-                    <span class="wish">💖 Amor 💖</span>
-                    <span class="wish">🌟 Felicidad 🌟</span>
-                </div>
-
-                <p class="personal-message">
-                    Te deseo un nuevo año lleno de momentos inolvidables y sueños cumplidos.
-                </p>
-
-                <div class="sparkles" aria-hidden="true">
-                    <span>✨</span><span>💫</span><span>⭐</span><span>✨</span><span>💫</span>
-                </div>
-
-                <p class="hidden-message">te quiero</p>
-            </div>
-
-            <!-- Confeti -->
-            <div class="confetti-container" aria-hidden="true"></div>
-        </section>
+        </div>
     </main>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
